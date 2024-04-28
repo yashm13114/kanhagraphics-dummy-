@@ -3,10 +3,11 @@ import {
     Collapse,
     initTWE,
 } from "tw-elements";
-import Logo from '../assets/images/image.svg'
-import Design from '../assets/images/Design.svg'
+// import Logo from '../assets/images/image.svg'
+import Logo from '../assets/images/LOGO.png'
 import { Home } from './Home';
 import ContactUs from './ContactUs';
+import { Link } from 'react-router-dom';
 export const Navbar = () => {
     initTWE({ Collapse });
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -31,17 +32,17 @@ export const Navbar = () => {
                 <img src={Design} className='h-16 ' alt="" />
                 
             </div> */}
-            <nav className= "sticky bg-white border border-gray-200 dark:border-gray-700 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 shadow">
+            <nav className= " bg-white border border-white dark:border-gray-700 px-2 sm:px-4 py-1 rounded dark:bg-gray-800 shadow">
 
                 <div className="container flex flex-wrap justify-between items-center mx-auto">
-                    <a href="/" className="flex items-center">
+                    <Link  to="/" className="flex items-center ">
 
                         <img
-                            className="me-2 h-16"
+                            className="me-2 h-16 "
                             src={Logo}
                             alt="TE Logo"
                             loading="lazy" />
-                    </a>
+                    </Link>
 
                     <div className="flex items-center">
                         <button
@@ -68,43 +69,43 @@ export const Navbar = () => {
                             <li>
                                 <a
                                     href="#"
-                                    className="block text-xl py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                                    className="block text-xl py-2 pr-4 pl-3 hover:text-blue-950 rounded md:bg-transparent md:p-0 dark:text-white"
                                     aria-current="page"
                                 >
                                     Home
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href="/About-Us"
+                                <Link
+                                    to="/About-Us"
                                     className="block text-xl py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                                 >
                                     About
-                                </a>
+                                </Link>
                             </li>
                             <li>
                                 <a
-                                    href="#"
+                                    href="/Services"
                                     className="block text-xl py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                                 >
                                     Services
                                 </a>
                             </li>
                             <li>
-                                <a
-                                    href=""
+                                <Link
+                                    to=""
                                     className="block text-xl py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                                 >
                                     Pricing
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a
-                                    href="Contact-Us"
+                                <Link
+                                    to="Contact-Us"
                                     className="block text-xl py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                                 >
                                     Contact Us
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

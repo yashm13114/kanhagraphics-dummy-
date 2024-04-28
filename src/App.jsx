@@ -10,6 +10,7 @@ import Logo from './assets/images/image.svg'
 import ContactUs from './Components/ContactUs'
 import { Home } from './Components/Home'
 import AboutPage from './Components/AboutPage';
+import { Services } from './Components/Services';
 function App() {
   initTWE({ Collapse });
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Contact-Us" element={<ContactUs />} />
         <Route path="/About-Us" element={<AboutPage />} />
+        <Route path="/Services" element={<Services />} />
       </Routes>
     </BrowserRouter>
 

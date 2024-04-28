@@ -36,7 +36,11 @@ export const Home = () => {
                         className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
                         <div className="flex h-full items-center justify-center">
                             <div className="text-white">
-                                <h2 className="mb-4 text-4xl font-semibold">We Bring Your Vision to reality</h2>
+                                <div id="floatingText" className='header '>
+                                    <p className='lg:pr-0 lg:pl-0 pl-10 pr-10  lg:text-8xl grid justify-center text-6xl font-bold text-white font-sans font-outline-2 outline-white text-opacity-30'>We Bring Your Vision</p>
+                                    <p className='lg:text-8xl text-white flex justify-center text-6xl font-bold font-sans  outline-white text-opacity-30'>to reality</p>
+                                </div>
+                                {/* <h2 className="mb-4 text-4xl font-semibold">We Bring Your Vision to reality</h2> */}
                                 {/* <h4 className="mb-6 text-xl font-semibold">Subheading</h4> */}
                                 {/* <button
                                 type="button"
@@ -660,17 +664,15 @@ export const Home = () => {
                                         Why Choose Us
                                     </span>
                                     <h2 className="mb-5 text-3xl font-bold text-dark dark:text-white sm:text-[40px]/[48px]">
-                                        Make your customers happy by giving services.
+                                        Make our customers happy by giving services.
                                     </h2>
                                     <p className="mb-5 text-base text-body-color dark:text-dark-6">
-                                        It is a long established fact that a reader will be distracted
-                                        by the readable content of a page when looking at its layout.
-                                        The point of using Lorem Ipsum is that it has a more-or-less.
+                                        Kanna Graphic, a dedicated printing and design agency passionate about empowering businesses and individuals through impactful design and print solutions.
+
                                     </p>
                                     <p className="mb-8 text-base text-body-color dark:text-dark-6">
-                                        A domain name is one of the first steps to establishing your
-                                        brand. Secure a consistent brand image with a domain name that
-                                        matches your business.
+                                        With over five years of industry experience, we specialize in crafting bespoke printed packaging materials, including cartons, customized labels, leaflets, and cylindrical printing on various substrates like Alu-Alu Blister, Alu-PVC Blister, and more. Our commitment to quality extends to offering minimum quantities as low as 10 pieces, ensuring accessibility without compromising excellence.
+
                                     </p>
                                     <a
                                         href="javascript:void(0)"
@@ -826,57 +828,67 @@ export const Home = () => {
                     </div>
                 </div> */}
 
-                <div className='bg-blue-300 lg:flex inline-block lg:justify-evenly justify-center  pt-10 pb-10'>
-                    
-                    <div className="relative lg:m-0 m-10 w-80 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
-                        <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-                        </div>
-                        <div className="p-6">
-                            <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                                Tailwind card
-                            </h5>
-                            <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
-                            </p>
-                        </div>
-                        <div className="p-6 pt-0">
-                            <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                                Read More
-                            </button>
+                <div className='bg-blue-300'>
+                    <div className='grid justify-center mb-10'>
+                        <div className='flex justify-center pb-14'>
+                            <p className='relative text-1 lg:pr-0 lg:pl-0 pl-10 pr-10   grid justify-center lg:text-8xl text-3xl font-bold text-white font-sans font-outline-2 outline-blue-700 text-opacity-25'>Our Printing Services </p>
+                            <h1 className='absolute text-2 font-bold lg:pt-16 pt-5 lg:text-5xl text-2xl text-blue-950'>Our Printing Services</h1>
+                            {/* <h1 className='z-5 text-5xl text-blue-950 font-bold'>Our Products</h1> */}
                         </div>
                     </div>
-                    <div className="relative lg:m-0 m-10 w-80 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
-                        <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+                    <div className=' lg:flex inline-block justify-evenly   pt-10 pb-10'>
+
+
+                        <div className=" lg:w-80 md:w-auto w-auto lg:h-auto md:h-[500px] relative lg:m-0 m-10  rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
+                            <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-[url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg')]">
+                            </div>
+                            <div className="p-6">
+                                <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                                    Cartons
+                                </h5>
+                                <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                                </p>
+                            </div>
+                            <div className="p-6 pt-0">
+                                <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                                    Read More
+                                </button>
+                            </div>
                         </div>
-                        <div className="p-6">
-                            <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                                Tailwind card
-                            </h5>
-                            <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
-                            </p>
+                        <div className=" lg:w-80 md:w-auto w-auto lg:h-auto md:h-[500px] relative lg:m-0 m-10  rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
+                            <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-[url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg')]">
+                            </div>
+                            <div className="p-6">
+                                <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                                    Cartons
+                                </h5>
+                                <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                                </p>
+                            </div>
+                            <div className="p-6 pt-0">
+                                <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                                    Read More
+                                </button>
+                            </div>
                         </div>
-                        <div className="p-6 pt-0">
-                            <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                                Read More
-                            </button>
-                        </div>
-                    </div>
-                    <div className="relative lg:m-0 m-10 w-80 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
-                        <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
-                        </div>
-                        <div className="p-6">
-                            <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                                Tailwind card
-                            </h5>
-                            <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
-                            </p>
-                        </div>
-                        <div className="p-6 pt-0">
-                            <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                                Read More
-                            </button>
+                        <div className="relative lg:m-0 m-10 lg:w-80 md:w-auto w-auto lg:h-auto md:h-[500px] rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
+                            <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-[url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg')]">
+                            </div>
+                            <div className="p-6">
+                                <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                                    Cartons
+                                </h5>
+                                <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                                </p>
+                            </div>
+                            <div className="p-6 pt-0">
+                                <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
+                                    Read More
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
