@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -24,7 +24,7 @@ function App() {
         <Route path="/About-Us" element={<AboutPage />} />
         <Route path="/Services" element={<Services />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
 
     </>
   )
