@@ -30,29 +30,28 @@ export const Home = () => {
     return (
         <>
             <div className=''>
-                <div
-                    className="relative h-[400px]  overflow-hidden  bg-[url('https://tecdn.b-cdn.net/img/new/slides/041.webp')] bg-cover bg-no-repeat p-12 text-center text-white">
-                    <div
-                        className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
+                <div className="relative h-[700px] overflow-hidden bg-[url('https://www.accurate.in/img/college/1681558312-best-educational-apps-featured_1.jpg')] bg-cover bg-no-repeat bg-center p-12 text-center text-white">
+                    <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
                         <div className="flex h-full items-center justify-center">
                             <div className="text-white">
                                 <div id="floatingText" className='header '>
-                                    <p className='lg:pr-0 lg:pl-0 pl-10 pr-10  lg:text-8xl grid justify-center text-6xl font-bold text-white font-sans font-outline-2 outline-white text-opacity-30'>We Bring Your Vision</p>
-                                    <p className='lg:text-8xl text-white flex justify-center text-6xl font-bold font-sans  outline-white text-opacity-30'>to reality</p>
+                                    <p className='lg:pr-0 lg:pl-0 pl-10 pr-10 lg:text-8xl grid justify-center text-6xl font-bold text-white font-sans font-outline-2 outline-white text-opacity-30'>We Bring Your Vision</p>
+                                    <p className='lg:text-8xl text-white flex justify-center text-6xl font-bold font-sans outline-white text-opacity-30'>to reality</p>
                                 </div>
                                 {/* <h2 className="mb-4 text-4xl font-semibold">We Bring Your Vision to reality</h2> */}
                                 {/* <h4 className="mb-6 text-xl font-semibold">Subheading</h4> */}
                                 {/* <button
-                                type="button"
-                                className="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
-                                data-twe-ripple-init
-                                data-twe-ripple-color="light">
-                                Call to action
-                            </button> */}
+                type="button"
+                className="inline-block rounded border-2 border-neutral-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-300 hover:text-neutral-200 focus:border-neutral-300 focus:text-neutral-200 focus:outline-none focus:ring-0 active:border-neutral-300 active:text-neutral-200 dark:hover:bg-neutral-600 dark:focus:bg-neutral-600"
+                data-twe-ripple-init
+                data-twe-ripple-color="light">
+                Call to action
+            </button> */}
                             </div>
                         </div>
                     </div>
                 </div>
+
 
                 {/* about */}
                 <section className="p-10 bg-blue-950 overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]  text-white dark:bg-dark">
@@ -839,7 +838,7 @@ export const Home = () => {
                     <div className=' lg:flex inline-block justify-evenly   pt-10 pb-10'>
 
 
-                        <div className=" lg:w-80 md:w-auto w-auto lg:h-auto md:h-[500px] relative lg:m-0 m-10  rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
+                        <div className="lg:w-80 md:w-full w-full lg:h-auto md:h-[500px] relative lg:m-0 m-10 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
                             <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-[url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg')]">
                             </div>
                             <div className="p-6">
@@ -856,7 +855,7 @@ export const Home = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className=" lg:w-80 md:w-auto w-auto lg:h-auto md:h-[500px] relative lg:m-0 m-10  rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
+                        <div className="lg:w-80 md:w-full w-full lg:h-auto md:h-[500px] relative lg:m-0 m-10 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
                             <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-[url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg')]">
                             </div>
                             <div className="p-6">
@@ -873,7 +872,7 @@ export const Home = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className="relative lg:m-0 m-10 lg:w-80 md:w-auto w-auto lg:h-auto md:h-[500px] rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
+                        <div className="lg:w-80 md:w-full w-full lg:h-auto md:h-[500px] relative lg:m-0 m-10 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
                             <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-[url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg')]">
                             </div>
                             <div className="p-6">
@@ -890,6 +889,7 @@ export const Home = () => {
                                 </button>
                             </div>
                         </div>
+
                     </div>
                 </div>
 

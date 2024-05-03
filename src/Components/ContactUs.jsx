@@ -1,7 +1,73 @@
-import React from "react";
+import React, { useState,useRef,useEffect } from "react";
 import { Footer } from "./Footer";
-
+import emailjs from '@emailjs/browser';
 const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_jt8xixt','template_x3ol5af', form.current, {
+      from_name: e.target.from_name.value,
+      from_email: e.target.from_email.value,
+      message: e.target.message.value,
+        publicKey: 'yhZtCR5sQrsVugsAR',
+      }).then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          console.log(error)
+        },
+      );
+  };
+  useEffect(() => {
+    console.log(form.current);
+  }, []);
+  
+  //   const [formData, setFormData] = useState({
+//     name: '',
+//     email: '',
+//     message: ''
+//   });
+
+//   const handleChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData({ ...formData, [name]: value });
+// };
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     console.log('Form submitted');
+//     try {
+//       const response = await fetch('http://localhost:5000/contact', {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json'
+//         },
+//         body: JSON.stringify(formData)
+//       });
+//       const responseData = await response.json();
+//       console.log('Response:', responseData);
+//       if (response.ok) {
+//         // const responseData = await response.json();
+//         alert('Message sent successfully.');
+//         setFormData({ name: '', email: '', message: '' });
+//         console.log('Form Data:', formData);
+
+     
+//       } else {
+//         alert('Failed to send message. Please try again later.');
+//       }
+//     } catch (error) {
+//       console.error('Error:', error);
+//       const responseText = await response.text(); // Get response text
+//       console.log('Response:', responseText); // Log entire response
+//       alert('Failed to send message. Please try again later.');
+//     }
+//   };
+
   return (
     <>
       <section className="lg:p-44 md:p-28 p-10  relative z-10 overflow-hidden bg-blue-950 text-white py-20 dark:bg-dark lg:py-[120px]">
@@ -9,7 +75,7 @@ const ContactUs = () => {
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-               
+
                 <h2 className="mb-6 text-[32px] font-bold uppercase text-dark dark:text-white sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
@@ -52,7 +118,7 @@ const ContactUs = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g clip-path="url(#clip0_941_17577)">
+                      <g>
                         <path
                           d="M24.3 31.1499C22.95 31.1499 21.4 30.7999 19.7 30.1499C16.3 28.7999 12.55 26.1999 9.19997 22.8499C5.84997 19.4999 3.24997 15.7499 1.89997 12.2999C0.39997 8.59994 0.54997 5.54994 2.29997 3.84994C2.34997 3.79994 2.44997 3.74994 2.49997 3.69994L6.69997 1.19994C7.74997 0.599942 9.09997 0.899942 9.79997 1.89994L12.75 6.29994C13.45 7.34994 13.15 8.74994 12.15 9.44994L10.35 10.6999C11.65 12.7999 15.35 17.9499 21.25 21.6499L22.35 20.0499C23.2 18.8499 24.55 18.4999 25.65 19.2499L30.05 22.1999C31.05 22.8999 31.35 24.2499 30.75 25.2999L28.25 29.4999C28.2 29.5999 28.15 29.6499 28.1 29.6999C27.2 30.6499 25.9 31.1499 24.3 31.1499ZM3.79997 5.54994C2.84997 6.59994 2.89997 8.74994 3.99997 11.4999C5.24997 14.6499 7.64997 18.0999 10.8 21.2499C13.9 24.3499 17.4 26.7499 20.5 27.9999C23.2 29.0999 25.35 29.1499 26.45 28.1999L28.85 24.0999C28.85 24.0499 28.85 24.0499 28.85 23.9999L24.45 21.0499C24.45 21.0499 24.35 21.0999 24.25 21.2499L23.15 22.8499C22.45 23.8499 21.1 24.1499 20.1 23.4999C13.8 19.5999 9.89997 14.1499 8.49997 11.9499C7.84997 10.8999 8.09997 9.54994 9.09997 8.84994L10.9 7.59994V7.54994L7.94997 3.14994C7.94997 3.09994 7.89997 3.09994 7.84997 3.14994L3.79997 5.54994Z"
                           fill="currentColor"
@@ -78,7 +144,7 @@ const ContactUs = () => {
                       Phone Number
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                    +91 9662660701
+                      +91 9662660701
                     </p>
                   </div>
                 </div>
@@ -103,39 +169,34 @@ const ContactUs = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                    info.kanhagraphic0701@gmail.com
+                      info.kanhagraphic0701@gmail.com
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12">
-                <form>
+              <div className="relative rounded-lg text-black bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12">
+                <form ref={form} onSubmit={sendEmail}>
                   <ContactInputBox
                     type="text"
-                    name="name"
+                    name="from_name"
                     placeholder="Your Name"
                   />
                   <ContactInputBox
                     type="text"
-                    name="email"
+                    name="from_email"
                     placeholder="Your Email"
                   />
-                  <ContactInputBox
-                    type="text"
-                    name="phone"
-                    placeholder="Your Phone"
-                  />
-                  <ContactTextArea
+                  <ContactTextArea 
                     row="6"
+                    name="message"
                     placeholder="Your Message"
-                    name="details"
-                    defaultValue=""
                   />
                   <div>
                     <button
                       type="submit"
+              
                       className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90"
                     >
                       Send Message
@@ -152,8 +213,6 @@ const ContactUs = () => {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
                         d="M0 100C0 44.7715 0 0 0 0C55.2285 0 100 44.7715 100 100C100 100 100 100 0 100Z"
                         fill="#3056D3"
                       />
@@ -955,7 +1014,7 @@ const ContactUs = () => {
           </div>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 };
