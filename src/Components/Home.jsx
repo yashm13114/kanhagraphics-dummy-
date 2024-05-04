@@ -830,15 +830,15 @@ export const Home = () => {
                 <div className='bg-blue-300'>
                     <div className='grid justify-center mb-10'>
                         <div className='flex justify-center pb-14'>
-                            <p className='relative text-1 lg:pr-0 lg:pl-0 pl-10 pr-10   grid justify-center lg:text-8xl text-3xl font-bold text-white font-sans font-outline-2 outline-blue-700 text-opacity-25'>Our Printing Services </p>
-                            <h1 className='absolute text-2 font-bold lg:pt-16 pt-5 lg:text-5xl text-2xl text-blue-950'>Our Printing Services</h1>
-                            {/* <h1 className='z-5 text-5xl text-blue-950 font-bold'>Our Products</h1> */}
+                            <p className='relative text-1 lg:pr-0 lg:pl-0 pl-10 pr-10   grid justify-center lg:text-8xl md:text-3xl text-2xl font-bold text-white font-sans font-outline-2 outline-blue-700 text-opacity-25'>Our Printing Services </p>
+                            <h1 className='absolute text-2 font-bold lg:pt-16 pt-5 lg:text-5xl md:text-2xl text-xl text-white'>Our Printing Services</h1>
+
                         </div>
                     </div>
                     <div className=' lg:flex inline-block justify-evenly   pt-10 pb-10'>
 
 
-                        <div className="lg:w-80 md:w-full w-full lg:h-auto md:h-[500px] relative lg:m-0 m-10 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
+                        <div className="lg:w-80 md:w-full w-[75%] lg:h-auto md:h-[500px] relative lg:m-0 m-10 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
                             <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-[url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg')]">
                             </div>
                             <div className="p-6">
@@ -855,7 +855,7 @@ export const Home = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className="lg:w-80 md:w-full w-full lg:h-auto md:h-[500px] relative lg:m-0 m-10 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
+                        <div className="lg:w-80 md:w-full w-[75%] lg:h-auto md:h-[500px] relative lg:m-0 m-10 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
                             <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-[url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg')]">
                             </div>
                             <div className="p-6">
@@ -872,7 +872,7 @@ export const Home = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className="lg:w-80 md:w-full w-full lg:h-auto md:h-[500px] relative lg:m-0 m-10 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
+                        <div className="lg:w-80 md:w-full w-[75%] lg:h-auto md:h-[500px] relative lg:m-0 m-10 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
                             <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-[url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg')]">
                             </div>
                             <div className="p-6">

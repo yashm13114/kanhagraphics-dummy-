@@ -32,7 +32,7 @@ export const Navbar = () => {
                 <img src={Design} className='h-16 ' alt="" />
                 
             </div> */}
-            <nav className= " bg-white border border-white dark:border-gray-700 px-2 sm:px-4 py-1 rounded dark:bg-gray-800 shadow">
+            <nav className= "h-[70px] bg-white border border-white dark:border-gray-700 px-2 sm:px-4 py-1 rounded dark:bg-gray-800 shadow">
 
                 <div className="container flex flex-wrap justify-between items-center mx-auto">
                     <Link  to="/" className="flex items-center ">
