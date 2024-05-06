@@ -32,7 +32,7 @@ export const Home = () => {
         <>
             <div className=''>
                 <div className="relative h-[700px] overflow-hidden bg-[url('https://www.accurate.in/img/college/1681558312-best-educational-apps-featured_1.jpg')] bg-cover bg-no-repeat bg-center p-12 text-center text-white">
-                    <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/60 bg-fixed">
+                    <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/20 bg-fixed">
                         <div className="flex h-full items-center justify-center">
                             <div className="text-white">
                                 <div id="floatingText" className='header '>
