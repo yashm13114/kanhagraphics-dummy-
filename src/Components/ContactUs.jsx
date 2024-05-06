@@ -1,4 +1,4 @@
-import React, { useState,useRef,useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Footer } from "./Footer";
 import emailjs from '@emailjs/browser';
 const ContactUs = () => {
@@ -7,66 +7,66 @@ const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_jt8xixt','template_x3ol5af', form.current, {
+    emailjs.sendForm('service_jt8xixt', 'template_x3ol5af', form.current, {
       from_name: e.target.from_name.value,
       from_email: e.target.from_email.value,
       message: e.target.message.value,
-        publicKey: 'yhZtCR5sQrsVugsAR',
-      }).then(
-        () => {
-          console.log('SUCCESS!');
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-          console.log(error)
-        },
-      );
+      publicKey: 'yhZtCR5sQrsVugsAR',
+    }).then(
+      () => {
+        console.log('SUCCESS!');
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+        console.log(error)
+      },
+    );
   };
   useEffect(() => {
     console.log(form.current);
   }, []);
-  
+
   //   const [formData, setFormData] = useState({
-//     name: '',
-//     email: '',
-//     message: ''
-//   });
+  //     name: '',
+  //     email: '',
+  //     message: ''
+  //   });
 
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     setFormData({ ...formData, [name]: value });
-// };
+  //   const handleChange = (e) => {
+  //     const { name, value } = e.target;
+  //     setFormData({ ...formData, [name]: value });
+  // };
 
-//   const handleSubmit = async (e) => {
-//     e.preventDefault();
-//     console.log('Form submitted');
-//     try {
-//       const response = await fetch('http://localhost:5000/contact', {
-//         method: 'POST',
-//         headers: {
-//           'Content-Type': 'application/json'
-//         },
-//         body: JSON.stringify(formData)
-//       });
-//       const responseData = await response.json();
-//       console.log('Response:', responseData);
-//       if (response.ok) {
-//         // const responseData = await response.json();
-//         alert('Message sent successfully.');
-//         setFormData({ name: '', email: '', message: '' });
-//         console.log('Form Data:', formData);
+  //   const handleSubmit = async (e) => {
+  //     e.preventDefault();
+  //     console.log('Form submitted');
+  //     try {
+  //       const response = await fetch('http://localhost:5000/contact', {
+  //         method: 'POST',
+  //         headers: {
+  //           'Content-Type': 'application/json'
+  //         },
+  //         body: JSON.stringify(formData)
+  //       });
+  //       const responseData = await response.json();
+  //       console.log('Response:', responseData);
+  //       if (response.ok) {
+  //         // const responseData = await response.json();
+  //         alert('Message sent successfully.');
+  //         setFormData({ name: '', email: '', message: '' });
+  //         console.log('Form Data:', formData);
 
-     
-//       } else {
-//         alert('Failed to send message. Please try again later.');
-//       }
-//     } catch (error) {
-//       console.error('Error:', error);
-//       const responseText = await response.text(); // Get response text
-//       console.log('Response:', responseText); // Log entire response
-//       alert('Failed to send message. Please try again later.');
-//     }
-//   };
+
+  //       } else {
+  //         alert('Failed to send message. Please try again later.');
+  //       }
+  //     } catch (error) {
+  //       console.error('Error:', error);
+  //       const responseText = await response.text(); // Get response text
+  //       console.log('Response:', responseText); // Log entire response
+  //       alert('Failed to send message. Please try again later.');
+  //     }
+  //   };
 
   return (
     <>
@@ -80,9 +80,8 @@ const ContactUs = () => {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eius tempor incididunt ut labore e dolore magna aliqua. Ut
-                  enim adiqua minim veniam quis nostrud exercitation ullamco
+                  Have a question or need assistance? We're here to help!  Fill out the following form and we will get
+                  We’d love to hear from you! Whether you have a question, want to share your thoughts or simply need some help getting started
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-white sm:h-[70px] sm:max-w-[70px]">
@@ -104,7 +103,8 @@ const ContactUs = () => {
                       Our Location
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                      D/100, Industrial Soc., New Sama Road,
+                      Vadodara -390024, Gujarat, India.
                     </p>
                   </div>
                 </div>
@@ -188,7 +188,7 @@ const ContactUs = () => {
                     name="from_email"
                     placeholder="Your Email"
                   />
-                  <ContactTextArea 
+                  <ContactTextArea
                     row="6"
                     name="message"
                     placeholder="Your Message"
@@ -196,7 +196,7 @@ const ContactUs = () => {
                   <div>
                     <button
                       type="submit"
-              
+
                       className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90"
                     >
                       Send Message

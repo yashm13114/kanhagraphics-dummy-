@@ -3,6 +3,7 @@ import {
     Ripple,
     initTWE,
 } from "tw-elements";
+import { Link } from 'react-router-dom';
 import { Footer } from './Footer';
 import Logo from '../assets/images/image.svg'
 import Carousel from './Carousel';
@@ -673,12 +674,12 @@ export const Home = () => {
                                         With over five years of industry experience, we specialize in crafting bespoke printed packaging materials, including cartons, customized labels, leaflets, and cylindrical printing on various substrates like Alu-Alu Blister, Alu-PVC Blister, and more. Our commitment to quality extends to offering minimum quantities as low as 10 pieces, ensuring accessibility without compromising excellence.
 
                                     </p>
-                                    <a
-                                        href="javascript:void(0)"
+                                    <Link
+                                        to="/About-Us"
                                         className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-primary hover:bg-opacity-90"
                                     >
                                         More...
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -830,15 +831,15 @@ export const Home = () => {
                 <div className='bg-blue-300'>
                     <div className='grid justify-center mb-10'>
                         <div className='flex justify-center pb-14'>
-                            <p className='relative text-1 lg:pr-0 lg:pl-0 pl-10 pr-10   grid justify-center lg:text-8xl md:text-3xl text-2xl font-bold text-white font-sans font-outline-2 outline-blue-700 text-opacity-25'>Our Printing Services </p>
-                            <h1 className='absolute text-2 font-bold lg:pt-16 pt-5 lg:text-5xl md:text-2xl text-xl text-white'>Our Printing Services</h1>
-
+                            <p className='relative text-1 lg:pr-0 lg:pl-0 pl-10 pr-10   grid justify-center lg:text-8xl text-3xl font-bold text-white font-sans font-outline-2 outline-blue-700 text-opacity-25'>Our Printing Services </p>
+                            <h1 className='absolute text-2 font-bold lg:pt-16 pt-5 lg:text-5xl text-2xl text-blue-950'>Our Printing Services</h1>
+                            {/* <h1 className='z-5 text-5xl text-blue-950 font-bold'>Our Products</h1> */}
                         </div>
                     </div>
                     <div className=' lg:flex inline-block justify-evenly   pt-10 pb-10'>
 
 
-                        <div className="lg:w-80 md:w-full w-[75%] lg:h-auto md:h-[500px] relative lg:m-0 m-10 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
+                        <div className="lg:w-80 md:w-full w-[80%] lg:h-auto md:h-[500px] relative lg:m-0 m-10 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
                             <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-[url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg')]">
                             </div>
                             <div className="p-6">
@@ -846,46 +847,63 @@ export const Home = () => {
                                     Cartons
                                 </h5>
                                 <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                                    <h1 className='text-3xl font-bold'>Benefits:</h1><hr className='text-white w-[20%] mb-3' />
+                                    <ul>
+                                        <li>No dia cost, No punching cost</li>
+                                        <li>Working 2 - 3 days fast delivery</li>
+                                        <li>Minimum quantity: 10 nos.</li>
+                                    </ul>
                                 </p>
                             </div>
                             <div className="p-6 pt-0">
                                 <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                                    Read More
+                                    <Link to="/Services">Read More</Link>
                                 </button>
                             </div>
                         </div>
-                        <div className="lg:w-80 md:w-full w-[75%] lg:h-auto md:h-[500px] relative lg:m-0 m-10 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
+                        <div className="lg:w-80 md:w-full w-[80%] lg:h-auto md:h-[500px] relative lg:m-0 m-10 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
                             <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-[url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg')]">
                             </div>
                             <div className="p-6">
                                 <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                                    Cartons
+                                    Alu Alu Blisters / Alu PVC Blisters / Strips /
+                                    Sachets Printing
                                 </h5>
                                 <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                                    <h1 className='text-3xl font-bold '>Benefits:</h1><hr className='text-white w-[20%] mb-3' />
+                                    <ul>
+                                        <li>Multicolor Printing</li>
+                                        <li>Cylindrical type printing</li>
+                                        <li> Door Step Delivery at Additional Cost</li>
+                                    </ul>
                                 </p>
                             </div>
                             <div className="p-6 pt-0">
                                 <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                                    Read More
+                                    <Link to="/Services">Read More</Link>
                                 </button>
                             </div>
                         </div>
-                        <div className="lg:w-80 md:w-full w-[75%] lg:h-auto md:h-[500px] relative lg:m-0 m-10 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
+                        <div className="lg:w-80 md:w-full w-[80%] lg:h-auto md:h-[500px] relative lg:m-0 m-10 rounded-xl bg-blue-950 bg-clip-border text-white shadow-md">
                             <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-[url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg')]">
                             </div>
                             <div className="p-6">
                                 <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-                                    Cartons
+                                    Lable Sheet Form
+                                    (Round cut lable)
                                 </h5>
                                 <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc felis ligula.
+                                    <h1 className='text-3xl font-bold '>Benefits:</h1><hr className='text-white w-[20%] mb-3' />
+                                    <ul>
+                                        <li>Multicolor Printing</li>
+                                        <li>Cylindrical type printing</li>
+                                        <li> Door Step Delivery at Additional Cost</li>
+                                    </ul>
                                 </p>
                             </div>
                             <div className="p-6 pt-0">
                                 <button data-ripple-light="true" type="button" className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">
-                                    Read More
+                                    <Link to="/Services">Read More</Link>
                                 </button>
                             </div>
                         </div>
