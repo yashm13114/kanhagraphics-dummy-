@@ -1,26 +1,41 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Footer } from "./Footer";
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const ContactUs = () => {
   const form = useRef();
-
+  const [submitted, setSubmitted] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_jt8xixt', 'template_x3ol5af', form.current, {
-      from_name: e.target.from_name.value,
-      from_email: e.target.from_email.value,
-      message: e.target.message.value,
-      publicKey: 'yhZtCR5sQrsVugsAR',
-    }).then(
-      () => {
-        console.log('SUCCESS!');
-      },
-      (error) => {
-        console.log('FAILED...', error.text);
-        console.log(error)
-      },
-    );
+    emailjs
+      .sendForm('service_jt8xixt', 'template_x3ol5af', form.current, {
+        from_name: e.target.from_name.value,
+        from_email: e.target.from_email.value,
+        message: e.target.message.value,
+        publicKey: 'yhZtCR5sQrsVugsAR',
+      })
+      .then(
+        () => {
+          toast.success('Submitted Succesfully', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark"
+          });
+          setSubmitted(true); // Set submitted to true
+          form.current.reset(); // Reload the page
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+          console.log(error);
+        }
+      );
   };
   useEffect(() => {
     console.log(form.current);
@@ -71,6 +86,21 @@ const ContactUs = () => {
   return (
     <>
       <section className="lg:p-44 md:p-28 p-10  relative z-10 overflow-hidden bg-blue-950 text-white py-20 dark:bg-dark lg:py-[120px]">
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+          />
+          <ToastContainer />
+        {/* Same as */}
+        <ToastContainer />
         <div className="container">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
@@ -177,7 +207,7 @@ const ContactUs = () => {
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
               <div className="relative rounded-lg text-black bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12">
-                <form ref={form} onSubmit={sendEmail}>
+                {/* <form ref={form} onSubmit={sendEmail}>
                   <ContactInputBox
                     type="text"
                     name="from_name"
@@ -202,7 +232,39 @@ const ContactUs = () => {
                       Send Message
                     </button>
                   </div>
-                </form>
+                </form> */}
+                <div>
+                  {submitted && (
+                    <div className="text-green-600">
+
+                    </div>
+                  )}
+                  <form ref={form} onSubmit={sendEmail}>
+                    <ContactInputBox
+                      type="text"
+                      name="from_name"
+                      placeholder="Your Name"
+                    />
+                    <ContactInputBox
+                      type="text"
+                      name="from_email"
+                      placeholder="Your Email"
+                    />
+                    <ContactTextArea
+                      row="6"
+                      name="message"
+                      placeholder="Your Message"
+                    />
+                    <div>
+                      <button
+                        type="submit"
+                        className="w-full rounded border border-primary bg-primary p-3 text-white transition hover:bg-opacity-90"
+                      >
+                        Send Message
+                      </button>
+                    </div>
+                  </form>
+                </div>
                 <div>
                   <span className="absolute -right-9 -top-10 z-[-1]">
                     <svg
