@@ -18,16 +18,17 @@ const ContactUs = () => {
       })
       .then(
         () => {
-          toast.success('Submitted Succesfully', {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "dark"
-          });
+          // toast.success('Submitted Succesfully', {
+          //   position: "top-right",
+          //   autoClose: 5000,
+          //   hideProgressBar: false,
+          //   closeOnClick: true,
+          //   pauseOnHover: true,
+          //   draggable: true,
+          //   progress: undefined,
+          //   theme: "dark"
+          // });
+          alert("submitted")
           setSubmitted(true); // Set submitted to true
           form.current.reset(); // Reload the page
         },
@@ -86,7 +87,7 @@ const ContactUs = () => {
   return (
     <>
       <section className="lg:p-44 md:p-28 p-10  relative z-10 overflow-hidden bg-blue-950 text-white py-20 dark:bg-dark lg:py-[120px]">
-        <ToastContainer
+        {/* <ToastContainer
           position="top-right"
           autoClose={5000}
           hideProgressBar={false}
@@ -97,10 +98,8 @@ const ContactUs = () => {
           draggable
           pauseOnHover
           theme="light"
-          />
-          <ToastContainer />
-        {/* Same as */}
-        <ToastContainer />
+        />
+        <ToastContainer /> */}
         <div className="container">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">

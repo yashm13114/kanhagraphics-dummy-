@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { FaArrowUp } from "react-icons/fa";
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -37,7 +37,7 @@ const ScrollToTop = () => {
       } fixed bottom-4 right-4 z-10 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-md transition-all duration-300`}
       onClick={scrollToTop}
     >
-      Scroll to Top
+      <FaArrowUp />
     </button>
   );
 };
