@@ -88,16 +88,16 @@ export const Footer = () => {
                                 Services
                             </h6>
                             <p className="mb-4">
-                                <a href="/Services">Cartons</a>
+                                <Link to="/Services">Cartons</Link>
                             </p>
                             <p className="mb-4">
-                                <a href="/Services">Blistors</a>
+                                <Link to="/Services">Blistors</Link>
                             </p>
                             <p className="mb-4">
-                                <a href="/Services">Label Sheets</a>
+                                <Link to="/Services">Label Sheets</Link>
                             </p>
                             <p>
-                                <a href="/Services">Design Services</a>
+                                <Link to="/Services">Design Services</Link>
                             </p>
                         </div>
                         {/* <!-- Useful links section --> */}
@@ -107,7 +107,7 @@ export const Footer = () => {
                                 Useful links
                             </h6>
                             <p className="mb-4">
-                                <a href="/Pricing">Pricing</a>
+                                <Link to="/Pricing">Pricing</Link>
                             </p>
                             <p className="mb-4">
                                 <Link to="/About-Us">About Us</Link>
@@ -115,9 +115,6 @@ export const Footer = () => {
                             <p className="mb-4">
                                 <Link to="/Contact-Us">Contact Us</Link>
                             </p>
-                            {/* <p>
-                                <a href="#!">Help</a>
-                            </p> */}
                         </div>
 
                         <div>

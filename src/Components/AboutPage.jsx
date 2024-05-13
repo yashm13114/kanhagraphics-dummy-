@@ -48,10 +48,10 @@ function AboutPage() {
 
 
                                     <h2
-                                        className="relative font-manrope font-bold text-4xl lg:text-5xl text-white mb-9 max-lg:text-center ">
+                                        className="relative font-manrope font-bold text-4xl text-white lg:text-5xl  mb-9 max-lg:text-center ">
                                         About
                                         Us </h2>
-                                    <p className="font-normal text-xl leading-8 text-gray-500 max-lg:text-center max-w-2xl mx-auto">
+                                    <p className="font-normal text-xl leading-8  text-white max-lg:text-center max-w-2xl mx-auto">
                                         We are printing and design agency with passion for helping
                                         businesses and individuals succeed through the power of
                                         design and print. With over 16 years of experience in the industry,
