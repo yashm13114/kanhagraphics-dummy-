@@ -77,8 +77,8 @@ export const Services = () => {
                                         </p>
                                         <div className="mt-6">
                                             <p className="text-white">
-                                                <h1 className='text-3xl font-bold'>Benefits:</h1><hr className='text-white w-[20%] mb-3' />
-                                                <ul>
+                                                <h1 className='text-3xl font-bold underline'>Benefits:</h1>
+                                                <ul className='list-disc'>
                                                     <li>No dia cost, No punching cost</li>
                                                     <li>Working 2 - 3 days fast delivery</li>
                                                     <li>Minimum quantity: 10 nos.</li>
@@ -107,12 +107,12 @@ export const Services = () => {
                                     <div className="mt-6">
                                         <h2 className="text-3xl font-bold tracking-tight text-white">
                                             Alu Alu Blisters / Alu PVC Blisters / Strips /
-                                            Sachets Printing
+                                            Sachets Printing-Labeling
                                         </h2>
                                         <div className="mt-6">
                                             <p className="text-white">
-                                                <h1 className='text-3xl font-bold '>Benefits:</h1><hr className='text-white w-[20%] mb-3' />
-                                                <ul>
+                                                <h1 className='text-3xl font-bold underline'>Benefits:</h1>
+                                                <ul className='list-disc'>
                                                     <li>Multicolor Printing</li>
                                                     <li>Cylindrical type printing</li>
                                                     <li> Door Step Delivery at Additional Cost</li>
@@ -145,8 +145,8 @@ export const Services = () => {
                                         </h2>
                                         <div className="mt-6">
                                             <p className="text-white">
-                                                <h1 className='text-3xl font-bold '>Benefits:</h1><hr className='text-white w-[20%] mb-3' />
-                                                <ul>
+                                                <h1 className='text-3xl font-bold underline'>Benefits:</h1>
+                                                <ul className='list-disc'>
                                                     <li>Multicolor Printing</li>
                                                     <li>Cylindrical type printing</li>
                                                     <li> Door Step Delivery at Additional Cost</li>

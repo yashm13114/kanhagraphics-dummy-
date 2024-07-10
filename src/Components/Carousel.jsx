@@ -106,7 +106,7 @@ const Carousel = () => {
                             {images.map((image, index) => (
                                 <>
                                     <div key={index} className='image-container'>
-                                        <img src={image} alt={`Image ${index}`} className="p-16 carousel-image h-60 w-80" />
+                                        <img src={image} alt={`Image ${index}`} className="p-16 carousel-image h-48 w-80" />
 
                                     </div>
                                 </>
