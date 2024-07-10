@@ -116,7 +116,7 @@ function AboutPage() {
                             </div>
                         </div>
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src={Aboutcreative} alt="Company Logo" className="w-full h-56 object-cover object-center" />
+                            <img src={Aboutsatisfaction} alt="Company Logo" className="w-full h-56 object-cover object-center" />
                             <div className="p-4">
                                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Customer Satisfaction</h3>
                                 <p className="text-gray-600">

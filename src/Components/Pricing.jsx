@@ -1,5 +1,5 @@
 import React from 'react'
-import pricing from '../assets/images/pricing2.png'
+import pricing from '../assets/images/pricingOrange.png'
 import Design2 from '../assets/images/kgDesign.png'
 import terms from '../assets/terms.gif'
 import { Footer } from './Footer'
@@ -9,7 +9,7 @@ export const Pricing = () => {
             <header className="bg-blue-950 text-white ">
                 <div>
                     <div className='absolute mb-28'>
-                        <img className='lg:w-[40%] lg:h-[40%] w-[20%] h-[20%] remove-white-background mb-10' src={Design2} alt="" />
+                        <img className='lg:w-[40%] lg:h-[40%] w-[20%] h-[20%] remove-wh ite-background mb-10' src={Design2} alt="" />
                     </div>
                     <div className='flex flex-col lg:flex-row justify-normal'>
                         <div className="pt-10 relative container mx-auto flex justify-center items-center">

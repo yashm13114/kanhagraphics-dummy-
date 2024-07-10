@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Clogo1 from '../assets/images/Clogo1.png'
-import Clogo2 from '../assets/images/Clogo2.png'
+import Clogo2 from '../assets/images/centurion2.png'
 import Clogo3 from '../assets/images/Clogo3.png'
 import Clogo4 from '../assets/images/Clogo4.png'
 import Clogo5 from '../assets/images/Clogo5.png'
@@ -106,7 +106,7 @@ const Carousel = () => {
                             {images.map((image, index) => (
                                 <>
                                     <div key={index} className='image-container'>
-                                        <img src={image} alt={`Image ${index}`} className="p-16 carousel-image" />
+                                        <img src={image} alt={`Image ${index}`} className="p-16 carousel-image h-60 w-80" />
 
                                     </div>
                                 </>
