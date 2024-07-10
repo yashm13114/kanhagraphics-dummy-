@@ -1,6 +1,7 @@
 import React from 'react'
 import pricing from '../assets/images/pricing2.png'
 import Design2 from '../assets/images/kgDesign.png'
+import terms from '../assets/terms.gif'
 import { Footer } from './Footer'
 export const Pricing = () => {
     return (
@@ -37,7 +38,7 @@ export const Pricing = () => {
                         </div>
                     </div>
                 </div> */}
-                <div className="mb-10">
+                <div className="">
                     <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
                         <div className="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
 
@@ -59,7 +60,7 @@ export const Pricing = () => {
                             <div className="p-6 pl-6 flex justify-center lg:relative lg:m-0 lg:h-full lg:px-0">
                                 <img loading="lazy" width="547" height="486"
                                     className="lg:w-[56%] w-[80%] rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0  lg:max-w-none"
-                                    src="https://cdnl.iconscout.com/lottie/premium/thumb/man-with-term-and-condition-5536230-4629530.gif" />
+                                    src={terms} />
                             </div>
                         </div>
                     </div>

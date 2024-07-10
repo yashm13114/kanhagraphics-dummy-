@@ -10,6 +10,11 @@ import pricing from '../assets/images/pricing2.png'
 import image1 from '../assets/images/LOGO.png'; // Import additional images
 import image3 from '../assets/images/LOGO.png';
 import Design2 from '../assets/images/kgDesign.png'
+import About from '../assets/About.gif'
+import AboutExplain from '../assets/AboutExplain.gif'
+import AboutQualityprinting from '../assets/Qualityprinting.gif'
+import Aboutsatisfaction from '../assets/satisfaction.gif'
+import Aboutcreative from '../assets/creative.gif'
 import Design3 from '../assets/images/kgDesign2.png'
 import { Footer } from './Footer';
 
@@ -33,7 +38,7 @@ function AboutPage() {
 
 
                             <div className="img-box">
-                                <img src="https://assets-v2.lottiefiles.com/a/e84e8ee6-1170-11ee-9647-d3729348d81a/WnrwQzHsg9.gif" alt="About Us tailwind page"
+                                <img src={About} alt="About Us tailwind page"
                                     className="max-lg:mx-auto rounded-3xl" />
 
                             </div>
@@ -71,7 +76,7 @@ function AboutPage() {
                     <div className="mt-32 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-9">
                             <div className="img-box">
-                                <img src="https://i.pinimg.com/originals/bb/0c/c7/bb0cc783196fa9b2119864ff90eb5702.gif" alt="About Us tailwind page" className="rounded-tl-[200px] rounded-br-[200px] max-lg:mx-auto shadow-lg" />
+                                <img src={AboutExplain} alt="About Us tailwind page" className="rounded-tl-[200px] rounded-br-[200px] max-lg:mx-auto shadow-lg" />
                             </div>
                             <div className="lg:pl-[100px] flex items-center">
                                 <div className="data w-full">
@@ -92,7 +97,7 @@ function AboutPage() {
                     </div>
                     <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 px-6 lg:px-8">
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="https://i.gifer.com/7F4w.gif" alt="Image 2" className="w-full h-56 object-cover object-center" />
+                            <img src={AboutQualityprinting} alt="Image 2" className="w-full h-56 object-cover object-center" />
                             <div className="p-4">
                                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Quality Printing</h3>
                                 <p className="text-gray-600">
@@ -101,7 +106,7 @@ function AboutPage() {
                             </div>
                         </div>
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="https://i.pinimg.com/originals/09/4f/49/094f493f1e62ca96245e124f977484c4.gif" alt="Image 3" className="w-full h-56 object-cover object-center" />
+                            <img src={Aboutcreative} alt="Image 3" className="w-full h-56 object-cover object-center" />
                             <div className="p-4">
                                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Creative Design</h3>
                                 <p className="text-gray-600">
@@ -111,7 +116,7 @@ function AboutPage() {
                             </div>
                         </div>
                         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="https://media.licdn.com/dms/image/C5112AQGcHTNxn-3rYA/article-cover_image-shrink_600_2000/0/1528343267011?e=2147483647&v=beta&t=f_umSlNCK_62PwN53NsqMKlmhSfq5a4-Q69ETdtQwDc" alt="Company Logo" className="w-full h-56 object-cover object-center" />
+                            <img src={Aboutcreative} alt="Company Logo" className="w-full h-56 object-cover object-center" />
                             <div className="p-4">
                                 <h3 className="text-lg font-semibold text-gray-800 mb-2">Customer Satisfaction</h3>
                                 <p className="text-gray-600">
